@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrent</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <div class="wheel-menu-wrap active-scroll">
+        <div class="container-fluid wheel-bg1">
+          <div class="row">
+            <!-- ლოგო -->
+            <div class="col-sm-3">
+            <div class="wheel-logo">
+              <a href="#"><img src="img\logo.png" alt=""></a>
+            </div>
+          </div>
+
+  <!-- საბჰედერი -->
+            <div class="col-sm-9 col-xs-12 padd-lr0">
+              <div class="wheel-top-menu clearfix">
+
+                <!-- კონტაქტი -->
+                <div class="wheel-top-menu-info">
+                  <div class="top-menu-item">
+                    <a href="#"><i class="fa fa-phone"></i><span>(+61) 3214 546789</span></a>
+                  </div>
+                  <div class="top-menu-item">
+                    <a href="#"><i class="fa fa-envelope"></i><span>contact@wheel-rental.com</span></a>
+                  </div>
+                </div>
+                <div class="wheel-top-menu-log">
+
+                  <!-- პროფილის ასარჩევი -->
+                  <!-- <div class="top-menu-item">
+                    <div class="dropdown wheel-user-ico">
+                      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Account<span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                      </ul>
+                    </div>
+                  </div> -->
+
+                  <!-- ენის ასარჩევი -->
+                  <div class="top-menu-item">
+                    <div class="dropdown wheel-lang-ico">
+                      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Eng<span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Georgian</a></li>
+                        <li><a href="#">Russian</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- ვალუტის ასარჩევი -->
+                  <div class="top-menu-item">
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">USD<span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">USD</a></li>
+                        <li><a href="#">EUR</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+            </div>
+
+  <!-- ძირითადი მენიუ -->
+            <div class="col-sm-9 menudiv">
+              <div class="wheel-navigation">
+                <nav id="dl-menu">
+                  <ul>
+                    <li class="menu-item   current-menu-parent menu-item-has-children   active-color "><a href="#">HOME</a></li>
+                    <li class="menu-item   current-menu-parent menu-item-has-children   active-color "><a href="#section_two">GALLERY</a></li>
+                    <li class="menu-item   current-menu-parent menu-item-has-children   active-color "><a href="#">HOME</a></li>
+                    <li class="menu-item   current-menu-parent menu-item-has-children   active-color "><a href="#">HOME</a></li>
+                    <span></span>
+                  </ul>
+                </nav>
+              </div>
+              <div class="top-menu-item" id="singin">
+                <div class="dropdown wheel-user-ico">
+                  <button type="button" name="button">Sing in</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+<!-- მთავარი გვერდი -->
+  <section class="mainsection" id="mainsection">
+    <!-- ძიების ველი -->
+    <form class="car_search_form" action="index.html" method="get">
+      <h1>FIND YOUR CAR</h1>
+      <div class="car_search_wrapper">
+        <div class="selectorr">
+          <select class="" id="brand" name="brand">
+            <option value="">Any Brand</option>
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes Benz">Mercedes Benz</option>
+            <option value="MINI">MINI</option>
+          </select>
+          <span class="ti-angle-down"></span>
+        </div>
+        <div class="selectorr">
+          <select class="" id="type" name="type">
+            <option value="">Any Brand</option>
+            <option value="Coupe">Coupe</option>
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+          </select>
+          <span class="ti-angle-down"></span>
+        </div>
+        <div class="selectorr">
+          <select id="sort_by" name="sort_by">
+            <option value="price_low">Price Low to High</option>
+            <option value="price_high">Price High to Low</option>
+          </select>
+          <span class="ti-exchange-vertical"></span>
+        </div>
+        <div class="selectorr searchbar">
+    		  <input id="car_search_btn" type="submit" class="button" value="Search">
+        </div>
+      </div>
+    </form>
+  </section>
+
+<!-- მეორე სექცია -->
+  <section class="section_two" id="section_two">
+    <div class="ppb_car_type_grid">
+      <div class="standard_wrapper">
+        <h2>Find Car By Type</h2>
+        <h6>We offer professional car rental in our range of high-end vehicles</h6>
+        <div id="CarType" class="portfolio_filter_wrapper gallery grid portrait three_cols" data-column="3">
+          <div class="element grid classic3_cols animated1">
+            <a class="car_image" href="#"></a>
+            <div class="portfolio_info_wrapper">
+              <h3>Coupe</h3>
+            </div>
+          </div>
+          <div class="element grid classic3_cols animated2">
+            <a class="car_image" href="#"></a>
+            <div class="portfolio_info_wrapper">
+              <h3>Sedan</h3>
+            </div>
+          </div>
+          <div class="element grid classic3_cols animated3">
+            <a class="car_image" href="#"></a>
+            <div class="portfolio_info_wrapper">
+              <h3>SUV</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

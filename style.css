@@ -1,0 +1,594 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+  text-decoration: none;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+/* ჩემი კოდი */
+
+body{
+  background: #ccc !important;
+}
+
+/* მენიუ */
+
+.wheel-menu-wrap {
+  position: fixed;
+  max-width: 1170px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 20px;
+  margin: auto;
+  z-index: 999;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+}
+
+.container-fluid.wheel-bg1 {
+  height: 130px;
+}
+
+.row {
+  height: 130px;
+}
+
+.wheel-bg1 {
+  background-color: #fff;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* ლოგო */
+@media (min-width: 768px){
+  .col-sm-3 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 768px){
+  .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: left;
+  }
+}
+
+.wheel-logo {
+  padding: 35px 0 0 25px;
+}
+
+.wheel-logo a{
+  color: #262626;
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.wheel-footer-logo img, .wheel-logo img {
+  max-height: 60px;
+}
+
+
+/* საბჰედერი */
+
+.col-sm-9.col-xs-12.padd-lr0 {
+  padding: 0;
+  height: 50px;
+}
+
+.padd-lr0 {
+  padding-right: 0;
+}
+.padd-l0, .padd-lr0, .padd-only-xs {
+  padding-left: 0;
+}
+
+@media (min-width: 768px){
+  .col-sm-9 {
+    width: 75%;
+  }
+}
+
+.wheel-top-menu {
+  background-color: #262626;
+  padding-left: 100px;
+  padding-right: 40px;
+  position: relative;
+}
+
+.wheel-top-menu:before {
+  position: absolute;
+  top: -1px;
+  left: -2px;
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 50px;
+  border-color: transparent transparent transparent #fff;
+}
+
+  /* კონტაქტი */
+
+.wheel-top-menu-info {
+  float: left;
+}
+
+.top-menu-item {
+  display: inline-block;
+}
+
+.top-menu-item a {
+  color: #989898;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 50px;
+  margin-right: 25px;
+}
+
+.top-menu-item a i {
+  padding-right: 10px;
+
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.top-menu-item a:hover{
+  text-decoration: none;
+  color: #22c8d4;
+  transition: .2s;
+}
+
+
+
+/* პროფილი */
+.wheel-top-menu-log {
+  float: right;
+}
+
+.wheel-top-menu-log .top-menu-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.top-menu-item .dropdown {
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.wheel-user-ico:before {
+  content: "\f007";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wheel-lang-ico:before, .wheel-user-ico:before {
+  color: #999;
+  text-rendering: auto;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+}
+
+
+.wheel-top-menu-log button {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 50px;
+  padding: 0 6px;
+  background-color: transparent;
+  border: none;
+}
+
+.top-menu-item .dropdown-menu {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+  @media only screen and (max-width: 1400px){
+  .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.wheel-lang-ico:before {
+  content: "\f0ac";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dropdown.wheel-user-ico button:hover{
+  color: #22c8d4;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.dropdown.wheel-lang-ico button:hover{
+  color: #22c8d4;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.dropdown button:hover{
+  color: #22c8d4;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+
+
+
+
+
+/* ძირითადი მენიუ */
+@media (min-width: 768px){
+  .col-sm-9 {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px){
+  .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: left;
+  }
+}
+
+
+.wheel-navigation {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  min-height: 70px;
+  padding-left: 50px;
+}
+
+.wheel-navigation nav {
+  float: left;
+  position: absolute;
+}
+
+.wheel-navigation nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	height: 70px;
+}
+
+.wheel-navigation nav ul li{
+  margin: 0 22px;
+}
+
+
+.main-menu {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.menu-item.active-color a {
+  color: #989898;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.menu-item.active-color a:hover{
+  color: #22c8d4;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.main-menu li {
+  display: inline-block;
+  position: relative;
+}
+
+
+.col-sm-9.menudiv {
+  position: absolute;
+  top: 40%;
+  right: 0%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#dl-menu ul span{
+	width: 1px;
+	height: 30px;
+	position: relative;
+	right: 0%;
+	background-color: darkgrey;
+}
+
+.dropdown.wheel-user-ico button{
+	background-color: transparent;
+	border: 1px solid;
+	border-color: darkgray;
+	width: auto;
+	transition: 0.5s;
+}
+
+#singin{
+	align-items: center;
+  display: flex;
+  margin: 0 20px;
+}
+
+
+
+
+
+/* პირველი სექცია */
+
+
+
+
+.mainsection{
+	width: 100%;
+	height: 100vh;
+  background-image: url(img/roadster.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/* ძიების ველი */
+.mainsection form{
+	position: relative;
+	top: 80%;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainsection form h1{
+	margin-bottom: 15px;
+  color: darkgray;
+}
+
+.car_search_wrapper{
+	display: flex;
+	justify-content: center;
+}
+.car_search_form{
+	border: 0;
+}
+.selectorr{
+	display: flex;
+	border: 1px solid #dce0e0;
+	border-radius: 5px;
+	background: #fff;
+	transition: border-color linear .3s;
+	margin: 0px 10px;
+	height: 40px;
+	width: 250px;
+	border-radius: 15px;
+	padding: 0 10px;
+	background-color: transparent;
+}
+
+.selectorr select{
+	border: none;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	background-color: transparent;
+}
+
+.selectorr select option {
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+	color: darkgray !important;
+}
+
+.ti-angle-down{
+	opacity: 0.5;
+	line-height: 1;
+	color: #000;
+	position: relative;
+	top: 2px;
+}
+/* .ti-angle-down:before {
+  content: "\e64b";
+	font-family: 'themify';
+} */
+
+.selectorr.searchbar{
+	border: none;
+	border-radius: 15px;
+	padding: 0;
+}
+
+.selectorr input{
+	border: none;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: #04DBC0;
+	border-radius: 15px;
+	color: #fff;
+}
+
+
+
+
+/* მეორე სექცია */
+.section_two{
+	width: 100%;
+	height: 100vh;
+}
+
+.ppb_car_type_grid{
+	width: 100%;
+	height: 100vh;
+}
+
+.animated1{
+	background-image: url(img/coupe.jpg);
+}
+
+.animated2{
+	background-image: url(img/sedan.jpg);
+}
+
+.animated3{
+	background-image: url(img/suv.jpg);
+}
+
+.portfolio_filter_wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.element.grid{
+	min-width: 380px;
+	min-height: 330px;
+	background-position: center;
+	background-size: cover;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.element.grid a{
+	width: 100%;
+	height: 100%;
+	color: transparent;
+}
+
+
+.portfolio_filter_wrapper{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.portfolio_info_wrapper{
+	position: relative;
+	top: 80%;
+}
+
+.portfolio_info_wrapper h3{
+	color: darkgray;
+	font-family: sans-serif;
+	font-weight: bolder;
+	margin: 5px;
+}
+
+.standard_wrapper{
+	top: 10%;
+	position: relative;
+}
+
+.standard_wrapper h2{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	font-family: sans-serif;
+	margin-bottom: 10px;
+}
+
+.standard_wrapper h6{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	color: darkgray;
+	font-family: sans-serif;
+	font-weight: bolder;
+	margin-bottom: 30px;
+}
